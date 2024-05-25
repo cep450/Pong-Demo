@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnpoints: []
-  startingSpeed: 150
+  startingSpeed: 200
   rigidBody2D: {fileID: 2554679981358411059}
 --- !u!212 &8111190112429936325
 SpriteRenderer:

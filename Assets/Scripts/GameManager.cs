@@ -32,11 +32,12 @@ public class GameManager : MonoBehaviour
 	public static void ResetRound() {
 		foreach(Player player in Instance.players) {
 			player.paddle.Recenter();
-			Instance.ball.Respawn();
 		}
+		Instance.ball.Respawn();
 	}
 
 	public static void RegisterWinner(Player winner) {
+
 		if(!gameInProgress) {
 			return;
 		}

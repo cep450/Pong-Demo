@@ -6,10 +6,10 @@ public class WinScreen : MonoBehaviour
 {
 
 	public void Show() {
-		this.enabled = true;
+		this.gameObject.SetActive(true);
 	}
 
 	public void Hide() {
-		this.enabled = false;
+		this.gameObject.SetActive(false);
 	}
 }

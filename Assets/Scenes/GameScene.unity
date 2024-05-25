@@ -444,6 +444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerUI 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5204741387807040774, guid: 17819273c5556c1479ca3a86c6a2a29c, type: 3}
+      propertyPath: m_text
+      value: Player 2 wins!
+      objectReference: {fileID: 0}
     - target: {fileID: 9098601436148336835, guid: 17819273c5556c1479ca3a86c6a2a29c, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
