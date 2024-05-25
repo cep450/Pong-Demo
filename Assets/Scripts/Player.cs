@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Build.Player;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -17,6 +16,9 @@ public class Player : MonoBehaviour
 	public WinScreen winScreen;
 
 	public Paddle paddle;
+
+	[SerializeField] AudioSource audioSource;
+	[SerializeField] AudioClip winSound;
 
 
     // Update is called once per frame
@@ -59,6 +61,7 @@ public class Player : MonoBehaviour
 		score = newScore;
 		scoreUI.UpdateScore(score);
 		if(score >= GameManager.scoreToWin) {
+			audioSource.PlayOneShot(winSound);
 			GameManager.RegisterWinner(this);
 		}
 	}

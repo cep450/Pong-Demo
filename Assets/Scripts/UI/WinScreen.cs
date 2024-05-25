@@ -5,6 +5,9 @@ using UnityEngine;
 public class WinScreen : MonoBehaviour
 {
 
+	[SerializeField] AudioSource audioSource;
+	[SerializeField] AudioClip restartSound;
+
 	public void Show() {
 		this.gameObject.SetActive(true);
 	}
@@ -14,6 +17,7 @@ public class WinScreen : MonoBehaviour
 	}
 
 	public void RestartButtonPressed() {
+		audioSource.PlayOneShot(restartSound);
 		GameManager.RestartGame();
 	}
 }

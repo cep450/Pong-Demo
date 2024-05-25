@@ -11,20 +11,12 @@ public class Paddle : MonoBehaviour
 	[SerializeField] AudioSource audioSource;
 	[SerializeField] AudioClip soundHit;
 
-    // Start is called before the first frame update
     void Start()
     {
 		moveAngle = maxPosition.position - minPosition.position;
 		moveAngle.Normalize();
 		Recenter();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 
 	// Move the paddle with the given velocity, where a positive velocity moves it towards the maximum position and vice versa
 	public void Move(float velocity) {
@@ -46,6 +38,5 @@ public class Paddle : MonoBehaviour
 	void OnCollisionEnter2D(Collision2D collision) {
 		audioSource.PlayOneShot(soundHit);
 	}
-
 
 }

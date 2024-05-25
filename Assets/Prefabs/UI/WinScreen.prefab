@@ -90,6 +90,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f40be343a2c22943a46cb34fe967fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  restartSound: {fileID: 8300000, guid: f80b584b0da0e3e478358eeb84a30af6, type: 3}
 --- !u!1 &7158459097435266513
 GameObject:
   m_ObjectHideFlags: 0
