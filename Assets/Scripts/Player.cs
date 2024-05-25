@@ -6,7 +6,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-	int score = 0;
+	public int score { get; private set; }
 
 	[SerializeField] KeyCode keyUp, keyDown;
 
@@ -48,14 +48,18 @@ public class Player : MonoBehaviour
 	}
 
 	public void AddScore(int amount = 1) {
-		score = score + amount;
+		SetScore(score + amount);
+	}
+
+	public void ResetScore() {
+		SetScore(0);
+	}
+
+	private void SetScore(int newScore) {
+		score = newScore;
 		scoreUI.UpdateScore(score);
 		if(score >= GameManager.scoreToWin) {
 			GameManager.RegisterWinner(this);
 		}
-	}
-
-	public void ResetScore() {
-		score = 0;
 	}
 }

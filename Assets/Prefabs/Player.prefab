@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyUp: 0
   keyDown: 0
-  moveSpeed: 4
+  moveSpeed: 5
   scoreUI: {fileID: 0}
   winScreen: {fileID: 0}
   paddle: {fileID: 5574146497058190742}

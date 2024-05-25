@@ -12,4 +12,8 @@ public class WinScreen : MonoBehaviour
 	public void Hide() {
 		this.gameObject.SetActive(false);
 	}
+
+	public void RestartButtonPressed() {
+		GameManager.RestartGame();
+	}
 }

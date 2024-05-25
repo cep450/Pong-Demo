@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
 	}
 
 	// Restart the game from the beginning
-	public void RestartGame() {
+	public static void RestartGame() {
 		foreach(Player player in Instance.players) {
 			player.ResetScore();
 			player.winScreen.Hide();

@@ -18,8 +18,6 @@ public class Ball : MonoBehaviour
 		Vector2 chosenAngle = chosenSpawn.spawnAngles[Random.Range(0, chosenSpawn.spawnAngles.Count)];
 		chosenAngle.Normalize();
 
-		Debug.Log("chosen angle was " + chosenAngle.ToString());
-
 		rigidBody2D.position = chosenSpawn.transform.position;
 		rigidBody2D.AddForce(chosenAngle * startingSpeed);
 
